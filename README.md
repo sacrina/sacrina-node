@@ -9,20 +9,20 @@
 
 Install Sacrina SDK using npm:
 	
-	npm install sacrinasdk --save
+	npm install sacrina --save
 	
 Alternatively, clone this repository and use SDK locally:
 
-	git clone https://github.com/sacrina/Sacrina-node-SDK.git
+	git clone https://github.com/sacrina/sacrina-node.git
 
 Then go into the Sacrina SDK folder and run `npm link`:
 	
-	cd /Sacrina-node-SDK
+	cd /sacrina-node
 	npm link
 	
 Then go inside the directory where you want to use Sacrina SDK and run:
 
-	npm link sacrinasdk
+	npm link sacrina
 
 
 ## Configuration
@@ -30,11 +30,11 @@ Then go inside the directory where you want to use Sacrina SDK and run:
 Register for Sacrina account and get your key. The use:
 
 
-	var SacrinaSDK = require('sacrinasdk').SacrinaSDK;
+	var sacrina = require('sacrina').sacrinarest;
 
     
-    sacrinasdk = new SacrinaSDK();
-    sacrinasdk.add_key('[your API key]');
+    sacrina = new sacrinarest();
+    sacrina.add_key('[your API key]');
 
 ## Usage
 
@@ -43,74 +43,74 @@ Register for Sacrina account and get your key. The use:
 You can add dataset as a list as:
 
     lis = ['data 1', 'data 2', 'data 3',..];
-    sacrinasdk.add_dataset(list);
+    sacrina.add_dataset(list);
     
 Or you can add data one by one as:
 
-    sacrinasdk.add_data('Data 1');
+    sacrina.add_data('Data 1');
 
 ### Upload dataset
 
 Upload your dataset to Sacrina using:
 
-    sacrinasdk.upload_dataset();
+    sacrina.upload_dataset();
     
 ### Select an existing dataset
 
 You can select an exisiting dataset using the id parameter:
 
-    sacrinasdk.select_dataset([dataset_id]);
+    sacrina.select_dataset([dataset_id]);
 
 ### Create model
 
 To create a new model using your added dataset, use the following:
 
-    sacrinasdk.create_model();
+    sacrina.create_model();
 
 ### Select model
 
 To select an existing model using its id, use the following:
 
-    sacrinasdk.select_model([model_id]);
+    sacrina.select_model([model_id]);
 
 ### Train model
 
 To start your model training, use the following:
 
-    sacrinasdk.train_model();
+    sacrina.train_model();
 
 ### Check model status
 
 To check the status of training, use the following:
 
-    sacrinasdk.check_model_status();
+    sacrina.check_model_status();
 
 ### Create project
 
 To create a new project, use the following:
 
-    sacrinasdk.create_project(gen, sector_min, sector_max);
+    sacrina.create_project(gen, sector_min, sector_max);
 
 ### Select project
 
 To select an existing project using its id, use the following:
 
-    sacrinasdk.select_project(project_id);
+    sacrina.select_project(project_id);
 
 ### Execute project
 
 To execute the selected project, use the following:
 
-    sacrinasdk.execute_project();
+    sacrina.execute_project();
 
 ### Check project status
 
 To check the project status, use the following:
 
-    sacrinasdk.check_project_status();
+    sacrina.check_project_status();
 
 ### Download results
 
 To download the results of the selected project, use the following:
 
-    sacrinasdk.download_results();
+    sacrina.download_results();
