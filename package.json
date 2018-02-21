@@ -1,13 +1,13 @@
 {
-  "name": "sacrina",
-  "version": "1.0.2",
-  "description": "Node.js library for Sacrina API",
-  "main": "lib/sacrinarest.js",
+  "name": "sacrinasdk",
+  "version": "1.0.4",
+  "description": "API for Sacrina",
+  "main": "lib/sacrinasdk.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "sacrina", "rest", "sacrina-api"
+    "sacrina"
   ],
   "author": " <contact@sacrina.com> (https://sacrina.com)",
   "license": "ISC",

@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.0.5 - 2018-02-21
+* Optional features added
+
+## 1.0.4 - 2018-01-10
+* README.md added
+
 ## 1.0.2 - 2018-01-09
 * Minor changes, some names changed
 
